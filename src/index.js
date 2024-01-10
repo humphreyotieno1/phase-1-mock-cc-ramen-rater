@@ -1,25 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // When the DOM is fully loaded, execute the following code
+    //  The code that is loaded when the DOM content is fully loaded
   
-    // Fetch and display all ramen images
+    // Fetch and display all ramen the images
     fetch("http://localhost:3000/ramens")
       .then(response => response.json())
       .then(ramens => {
         // Retrieve the ramen-menu div
         const ramenMenu = document.getElementById("ramen-menu");
   
-        // Iterate through each ramen and create an image element for it
+        // Loop through each ramen and create an image element for it
         ramens.forEach(ramen => {
           const ramenImage = document.createElement("img");
           ramenImage.src = ramen.image;
           ramenImage.alt = ramen.name;
   
-          // Add click event listener to display details of the selected ramen
+          // Adding a click event listener to display information about the selected ramen
           ramenImage.addEventListener("click", () => displayRamenDetails(ramen));
           ramenMenu.appendChild(ramenImage);
         });
       });
-  
+  /*
     // Display details of the selected ramen
     function displayRamenDetails(ramen) {
       const ramenDetail = document.getElementById("ramen-detail");
@@ -81,4 +81,5 @@ document.addEventListener("DOMContentLoaded", () => {
       ramenMenu.appendChild(newRamenImage);
     });
   
-  });  
+  });
+  */
