@@ -49,20 +49,20 @@ document.addEventListener("DOMContentLoaded", () => {
       ramenDetail.appendChild(ratingDisplay);
       ramenDetail.appendChild(commentDisplay);
     }
-  /*
-    // Handle form submission for creating new ramen
+
+    // Handling form submission for creating new ramen
     const newRamenForm = document.getElementById("new-ramen");
     newRamenForm.addEventListener("submit", (event) => {
       event.preventDefault();
   
-      // Retrieve values from the form
+      // Retrieving the values from the form to create a new ramen
       const newName = document.getElementById("new-name").value;
       const newRestaurant = document.getElementById("new-restaurant").value;
       const newImage = document.getElementById("new-image").value;
       const newRating = document.getElementById("new-rating").value;
       const newComment = document.getElementById("new-comment").value;
   
-      // Create a new ramen object with the form values
+      // Creating a new ramen object with the form values
       const newRamen = {
         name: newName,
         restaurant: newRestaurant,
@@ -77,10 +77,9 @@ document.addEventListener("DOMContentLoaded", () => {
       newRamenImage.src = newImage;
       newRamenImage.alt = newName;
   
-      // Add click event listener to the new ramen image
+      // Adding a click event listener to the new ramen image
       newRamenImage.addEventListener("click", () => displayRamenDetails(newRamen));
       ramenMenu.appendChild(newRamenImage);
     });
   
   });
-  */
