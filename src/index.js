@@ -81,5 +81,4 @@ document.addEventListener("DOMContentLoaded", () => {
       ramenMenu.appendChild(newRamenImage);
     });
   
-    // Additional functionalities for advanced and extra advanced deliverables can be implemented here.
   });  
