@@ -19,36 +19,37 @@ document.addEventListener("DOMContentLoaded", () => {
           ramenMenu.appendChild(ramenImage);
         });
       });
-  /*
-    // Display details of the selected ramen
+  
+    // Display the details of the ramen that is selected
     function displayRamenDetails(ramen) {
+      // Retrieving the elements that are used to display ramen details
       const ramenDetail = document.getElementById("ramen-detail");
       const ratingDisplay = document.getElementById("rating-display");
       const commentDisplay = document.getElementById("comment-display");
   
-      // Create elements for ramen details
+      // Creating elements for ramen details
       const detailImage = document.createElement("img");
       const nameElement = document.createElement("h2");
       const restaurantElement = document.createElement("h3");
   
-      // Update details with the selected ramen's information
+      // Updating details with the selected ramen's information
       detailImage.src = ramen.image;
       nameElement.textContent = ramen.name;
       restaurantElement.textContent = ramen.restaurant;
       ratingDisplay.textContent = ramen.rating;
       commentDisplay.textContent = ramen.comment;
   
-      // Clear previous details
+      // Clear the previous details(in the ramen-detail div)
       ramenDetail.innerHTML = "";
   
-      // Append updated details to the ramen-detail div
+      // Appending the updated details to the ramen-detail div
       ramenDetail.appendChild(detailImage);
       ramenDetail.appendChild(nameElement);
       ramenDetail.appendChild(restaurantElement);
       ramenDetail.appendChild(ratingDisplay);
       ramenDetail.appendChild(commentDisplay);
     }
-  
+  /*
     // Handle form submission for creating new ramen
     const newRamenForm = document.getElementById("new-ramen");
     newRamenForm.addEventListener("submit", (event) => {
